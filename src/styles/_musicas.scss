@@ -1,0 +1,54 @@
+.musicas{
+    display: grid;
+    text-align: center;
+    min-height: 100vh;
+    place-items: center;
+    align-items: center;
+    padding-top: 80px;
+
+    &__title{
+        font-size: 18px;
+    }
+
+    .container{
+        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+
+        .image{
+            height: 200px;
+            margin: 5px;
+        }
+    }
+}
+
+.caixa{
+    display: inline-block;
+    position: relative;
+
+    p{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: #aa8a8a;
+        opacity: 0;
+    }
+
+    @media (max-width: 640px){
+        p{
+            opacity: 1;
+        }
+    }
+
+    &:hover{
+        p{
+            opacity: 1;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,160 @@
+.hero {
+  display: grid;
+  text-align: center;
+  min-height: 100vh;
+  place-items: center;
+  align-items: center;
+}
+.hero__text {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 28px;
+  line-height: 50px;
+}
+.hero .subtitle {
+  line-height: 30px;
+  font-size: 18px;
+}
+.hero button {
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.musicas {
+  display: grid;
+  text-align: center;
+  min-height: 100vh;
+  place-items: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.musicas__title {
+  font-size: 18px;
+}
+.musicas .container {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+.musicas .container .image {
+  height: 200px;
+  margin: 5px;
+}
+
+.caixa {
+  display: inline-block;
+  position: relative;
+}
+.caixa p {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #aa8a8a;
+  opacity: 0;
+}
+@media (max-width: 640px) {
+  .caixa p {
+    opacity: 1;
+  }
+}
+.caixa:hover p {
+  opacity: 1;
+}
+
+.selecao {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.selecao__title {
+  font-size: 18px;
+}
+.selecao__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 100px;
+  padding-top: 80px;
+}
+@media (max-width: 640px) {
+  .selecao__container {
+    grid-template-columns: 1fr;
+  }
+}
+.selecao__container__banda {
+  padding-bottom: 30px;
+}
+.selecao__lista {
+  display: grid;
+  gap: 10px;
+}
+.selecao__lista__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.selecao__lista__item p {
+  font-size: 14px;
+}
+.selecao__lista__image {
+  height: 45px;
+}
+
+.info {
+  display: grid;
+  text-align: center;
+  min-height: 100vh;
+  place-items: center;
+  align-items: center;
+}
+.info .container__text {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.rodape .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
